@@ -61,7 +61,7 @@ class Trie:
             self.output.append(curr_word[:])
         
         for child in node.children.values():
-            self.dfs(child, word + [node.char])
+            self._dfs(child, word + [node.char])
 
     def find_words_with_prefix(self, prefix) -> List[str]:
         """Find all words with prefix"""
