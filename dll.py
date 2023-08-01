@@ -82,6 +82,7 @@ class DLL(object):
             self.tail = new_node
     
     def _is_empty(self):
+        """Return if the list empty"""
         return self.head == self.tail
     
     def delete_front(self) -> int:
